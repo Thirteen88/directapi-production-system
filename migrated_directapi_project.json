@@ -1,0 +1,69 @@
+{
+  "project_name": "Migrated DirectAPI Project",
+  "migration_timestamp": 1762349189.7091517,
+  "api_system": "DirectAPI",
+  "performance_improvement": "58.2x faster than browser automation",
+  "tasks": [
+    {
+      "task_id": "demo_001",
+      "task_name": "Generate Python Utility Functions",
+      "agent_type": "code_generator",
+      "prompt": "Create Python functions for data validation, file handling, and error logging. Include docstrings, type hints, and usage examples.",
+      "system_prompt": "You are an expert software engineer. Write clean, efficient, well-documented code with type hints and examples.",
+      "model": "gpt-4o-mini",
+      "max_tokens": 1200,
+      "directapi_ready": true
+    },
+    {
+      "task_id": "demo_002",
+      "task_name": "Create Android Automation Steps",
+      "agent_type": "automation_specialist",
+      "prompt": "Generate ADB commands to automate opening an app, navigating to settings, and clearing cache. Include specific coordinates, timing, and verification steps.",
+      "system_prompt": "You are an automation expert. Provide specific, actionable automation steps with exact commands and coordinates.",
+      "model": "gpt-4o-mini",
+      "max_tokens": 800,
+      "directapi_ready": true
+    },
+    {
+      "task_id": "demo_003",
+      "task_name": "Debug Memory Leak Issue",
+      "agent_type": "debugger",
+      "prompt": "Identify the cause of a memory leak in a Python web application and provide step-by-step debugging instructions with code fixes.",
+      "system_prompt": "You are a debugging expert. Identify issues and provide step-by-step debugging instructions with solutions.",
+      "model": "claude-3.7-sonnet",
+      "max_tokens": 1000,
+      "directapi_ready": true
+    },
+    {
+      "task_id": "demo_004",
+      "task_name": "Write API Documentation",
+      "agent_type": "documenter",
+      "prompt": "Create comprehensive API documentation for a REST service including endpoints, request/response formats, authentication, and code examples.",
+      "system_prompt": "You are a technical writer. Create clear, comprehensive documentation with examples, API references, and usage guides.",
+      "model": "gemini-2.0-flash-free",
+      "max_tokens": 1500,
+      "directapi_ready": true
+    },
+    {
+      "task_id": "demo_005",
+      "task_name": "Review Code Quality",
+      "agent_type": "code_reviewer",
+      "prompt": "Review a Python codebase for security vulnerabilities, performance issues, and code quality improvements. Provide specific line-by-line recommendations.",
+      "system_prompt": "You are a senior code reviewer. Analyze code for bugs, performance issues, security vulnerabilities, and best practices. Provide specific recommendations.",
+      "model": "claude-3.7-sonnet",
+      "max_tokens": 1000,
+      "directapi_ready": true
+    }
+  ],
+  "performance_stats": {
+    "directapi_total_time": 3.0072760581970215,
+    "browser_estimated_time": 175,
+    "time_saved_seconds": 171.99272394180298,
+    "time_saved_minutes": 2.86654539903005,
+    "speed_improvement_factor": 58.19219672999335,
+    "successful_tasks": 5,
+    "total_tasks": 5,
+    "success_rate": 100.0,
+    "avg_task_time": 2.990258502960205
+  }
+}

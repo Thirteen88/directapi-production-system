@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/TaskOutput.json",
+  "title": "TaskOutput",
+  "description": "Individual sub-agent result format capturing the outcome of a single task execution with provenance and cost tracking.",
+  "type": "object",
+  "required": [
+    "ok",
+    "task_name",
+    "agent",
+    "inputs",
+    "outputs",
+    "evidence",
+    "provenance",
+    "token_cost",
+    "timestamp"
+  ],
+  "properties": {
+    "ok": {
+      "type": "boolean",
+      "description": "Whether the task completed successfully"
+    },
+    "task_name": {
+      "type": "string",
+      "description": "Name or identifier of the task that was executed",
+      "minLength": 1
+    },
+    "agent": {
+      "type": "string",
+      "description": "Identifier of the agent that executed this task",
+      "minLength": 1
+    },
+    "inputs": {
+      "description": "Input data provided to the task",
+      "oneOf": [
+        { "type": "object" },
+        { "type": "array" },
+        { "type": "string" },
+        { "type": "number" },
+        { "type": "boolean" },
+        { "type": "null" }
+      ]
+    },
+    "outputs": {
+      "description": "Output data produced by the task",
+      "oneOf": [
+        { "type": "object" },
+        { "type": "array" },
+        { "type": "string" },
+        { "type": "number" },
+        { "type": "boolean" },
+        { "type": "null" }
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "description": "Evidence and artifacts supporting the task execution and results",
+      "properties": {
+        "artifacts": {
+          "type": "array",
+          "description": "Array of artifact references produced during execution",
+          "items": {
+            "type": "object",
+            "required": ["type", "location"],
+            "properties": {
+              "type": {
+                "type": "string",
+                "description": "Type of artifact (e.g., log, file, screenshot)"
+              },
+              "location": {
+                "type": "string",
+                "description": "Location or path to the artifact"
+              },
+              "description": {
+                "type": "string",
+                "description": "Description of the artifact"
+              },
+              "checksum": {
+                "type": "string",
+                "description": "Checksum for artifact integrity verification"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "logs": {
+          "type": "array",
+          "description": "Execution logs captured during task processing",
+          "items": {
+            "type": "object",
+            "properties": {
+              "level": {
+                "type": "string",
+                "enum": ["debug", "info", "warn", "error", "critical"]
+              },
+              "message": { "type": "string" },
+              "timestamp": { "type": "string", "format": "date-time" }
+            }
+          }
+        },
+        "validation_results": {
+          "type": "object",
+          "description": "Results of output validation against success criteria",
+          "properties": {
+            "passed": { "type": "boolean" },
+            "details": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Provenance information tracking the execution lineage and integrity",
+      "required": [
+        "prompt_version",
+        "inputs_hash",
+        "outputs_hash",
+        "delegation_timestamp"
+      ],
+      "properties": {
+        "prompt_version": {
+          "type": "string",
+          "description": "Version of the prompt or instruction set used",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "inputs_hash": {
+          "type": "string",
+          "description": "Cryptographic hash of the input data",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "outputs_hash": {
+          "type": "string",
+          "description": "Cryptographic hash of the output data",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        },
+        "delegation_timestamp": {
+          "type": "string",
+          "description": "ISO 8601 timestamp when the task was delegated",
+          "format": "date-time"
+        },
+        "completion_timestamp": {
+          "type": "string",
+          "description": "ISO 8601 timestamp when the task was completed",
+          "format": "date-time"
+        },
+        "model_version": {
+          "type": "string",
+          "description": "Version or identifier of the AI model used"
+        },
+        "execution_id": {
+          "type": "string",
+          "description": "Unique identifier for this specific execution"
+        }
+      },
+      "additionalProperties": true
+    },
+    "token_cost": {
+      "type": "object",
+      "description": "Token usage and cost metrics for this task execution",
+      "required": ["total_tokens"],
+      "properties": {
+        "total_tokens": {
+          "type": "integer",
+          "description": "Total number of tokens used",
+          "minimum": 0
+        },
+        "input_tokens": {
+          "type": "integer",
+          "description": "Number of input tokens consumed",
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": "integer",
+          "description": "Number of output tokens generated",
+          "minimum": 0
+        },
+        "cost_usd": {
+          "type": "number",
+          "description": "Estimated cost in USD",
+          "minimum": 0
+        },
+        "model": {
+          "type": "string",
+          "description": "Model identifier used for cost calculation"
+        }
+      },
+      "additionalProperties": true
+    },
+    "timestamp": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when this TaskOutput was created",
+      "format": "date-time"
+    },
+    "error": {
+      "type": "object",
+      "description": "Error information if the task failed (present when ok is false)",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "Error code identifier"
+        },
+        "message": {
+          "type": "string",
+          "description": "Human-readable error message"
+        },
+        "details": {
+          "description": "Additional error details",
+          "oneOf": [
+            { "type": "object" },
+            { "type": "string" }
+          ]
+        },
+        "stack_trace": {
+          "type": "string",
+          "description": "Stack trace if available"
+        }
+      },
+      "additionalProperties": true
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional metadata about the task execution",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

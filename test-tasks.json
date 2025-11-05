@@ -1,0 +1,18 @@
+{
+  "tasks": [
+    {
+      "name": "task-1-hello",
+      "description": "Create hello.txt file",
+      "prompt": "Create a file called hello.txt with the content 'Hello from task 1'",
+      "allowed_tools": ["Write"],
+      "base_branch": "main"
+    },
+    {
+      "name": "task-2-world",
+      "description": "Create world.txt file",
+      "prompt": "Create a file called world.txt with the content 'World from task 2'",
+      "allowed_tools": ["Write"],
+      "base_branch": "main"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "name": "security-vulnerability-scan",
+      "description": "Comprehensive security vulnerability assessment and penetration testing",
+      "prompt": "Conduct thorough security analysis including vulnerability scanning, penetration testing, security audit, threat modeling, and provide detailed remediation recommendations",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "performance-bottleneck-analysis",
+      "description": "Deep performance analysis and optimization bottleneck identification",
+      "prompt": "Analyze system performance, identify bottlenecks, optimize database queries, improve caching strategies, enhance memory management, and implement performance monitoring",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "system-architecture-redesign",
+      "description": "Complete system architecture redesign with microservices pattern",
+      "prompt": "Redesign system architecture using microservices patterns, implement service mesh, add API gateway, design event-driven architecture, and create comprehensive system documentation",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "comprehensive-testing-suite",
+      "description": "Complete testing suite with unit, integration, and E2E tests",
+      "prompt": "Create comprehensive testing suite including unit tests with 95% coverage, integration tests, end-to-end tests, performance tests, and automated CI/CD pipeline integration",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "medium"
+    },
+    {
+      "name": "api-documentation-generation",
+      "description": "Generate comprehensive API documentation with OpenAPI specs",
+      "prompt": "Generate complete API documentation including OpenAPI specifications, interactive API docs, usage examples, authentication guides, and SDK documentation",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "priority": "medium"
+    },
+    {
+      "name": "debugging-complex-issue",
+      "description": "Debug complex production issue with memory leaks and race conditions",
+      "prompt": "Debug complex production issues including memory leaks, race conditions, threading problems, performance degradation, and provide comprehensive fix implementation",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "code-refactoring-cleanup",
+      "description": "Comprehensive code refactoring and technical debt cleanup",
+      "prompt": "Refactor legacy codebase, eliminate technical debt, improve code structure, enhance maintainability, implement design patterns, and optimize code organization",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "medium"
+    },
+    {
+      "name": "database-schema-migration",
+      "description": "Complex database schema migration with zero downtime",
+      "prompt": "Plan and execute complex database schema migration with zero downtime, data validation, rollback procedures, performance optimization, and comprehensive testing",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "integration-api-implementation",
+      "description": "Implement comprehensive third-party API integration system",
+      "prompt": "Implement robust third-party API integration with retry mechanisms, error handling, rate limiting, monitoring, caching, and comprehensive fallback strategies",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "medium"
+    },
+    {
+      "name": "monitoring-observability-setup",
+      "description": "Complete monitoring and observability infrastructure setup",
+      "prompt": "Implement comprehensive monitoring including metrics collection, distributed tracing, log aggregation, alerting systems, dashboard creation, and performance monitoring",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "medium"
+    }
+  ]
+}

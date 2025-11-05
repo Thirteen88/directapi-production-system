@@ -1,0 +1,23 @@
+{
+  "siteName": "ish-chat",
+  "url": "https://ish.chat",
+  "captureTime": "2025-11-05T11:24:11.768Z",
+  "apiCalls": [],
+  "authHeaders": {},
+  "notes": [],
+  "summary": {
+    "totalApiCalls": 0,
+    "uniqueEndpoints": 0,
+    "hasAuth": false,
+    "streamingEndpoints": 0,
+    "postRequests": 0,
+    "getRequests": 0
+  },
+  "analysis": {
+    "endpoints": [],
+    "authTypes": [],
+    "streamingDetected": false,
+    "likelyChatEndpoint": null,
+    "likelyModelsEndpoint": null
+  }
+}

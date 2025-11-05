@@ -1,0 +1,84 @@
+{
+  "tasks": [
+    {
+      "name": "ish-automation-security-audit",
+      "description": "Conduct comprehensive security audit and vulnerability assessment of ISH automation system",
+      "prompt": "Perform thorough security analysis of the ISH automation project, identify potential vulnerabilities, assess security risks in automation workflows, review credential handling, and provide detailed security recommendations with implementation guidance.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "nhs-dental-performance-optimization",
+      "description": "Optimize NHS dental site for maximum performance and user experience",
+      "prompt": "Analyze and optimize the NHS dental site for peak performance, implement advanced caching strategies, optimize database queries, enhance page load speed, improve mobile responsiveness, and ensure compliance with web accessibility standards.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "claude-orchestrator-architecture-enhancement",
+      "description": "Enhance Claude orchestrator architecture with advanced features and optimizations",
+      "prompt": "Enhance the Claude orchestrator system with improved model assignment algorithms, advanced load balancing, comprehensive monitoring, enhanced error handling, and architectural improvements for scalability and reliability.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "android-automation-system-integration",
+      "description": "Complete Android automation system integration with advanced device management",
+      "prompt": "Complete the Android automation system with comprehensive device management, advanced ADB automation, multi-device support, error recovery mechanisms, performance monitoring, and detailed logging capabilities.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "perplexity-honor50-complete-integration",
+      "description": "Complete Perplexity Honor 50 integration with full feature implementation",
+      "prompt": "Complete the Perplexity Honor 50 integration project by implementing all remaining features, optimizing performance, ensuring reliability, adding comprehensive testing, and creating detailed documentation and user guides.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "claude-sidekick-ai-enhancement",
+      "description": "Enhance Claude Sidekick with advanced AI capabilities and context awareness",
+      "prompt": "Enhance the Claude Sidekick project with improved AI response accuracy, advanced context-aware assistance, better memory management, enhanced user interaction features, and optimized performance.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "ishchat-integration-system-completion",
+      "description": "Complete ISHChat integration system with robust architecture",
+      "prompt": "Complete the ISHChat integration project with robust system architecture, comprehensive error handling, performance optimization, extensive testing, and production-ready deployment configurations.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "uk-council-data-enhancement",
+      "description": "Enhance UK council sites data with advanced scraping and analysis",
+      "prompt": "Enhance the UK council sites collection with advanced scraping techniques, data validation, automated updates, performance optimization, and comprehensive data analysis capabilities.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "low"
+    },
+    {
+      "name": "termux-monitoring-system-optimization",
+      "description": "Optimize Termux monitoring system with advanced features and reliability",
+      "prompt": "Optimize the Termux monitoring system with real-time advanced alerts, comprehensive reporting dashboard, performance optimizations, custom metrics, and enhanced reliability features.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "comprehensive-documentation-overhaul",
+      "description": "Complete documentation overhaul with comprehensive guides and API documentation",
+      "prompt": "Perform comprehensive documentation overhaul across all projects, create detailed setup guides, API documentation, troubleshooting guides, best practices documentation, and maintain consistency across all project documentation.",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main",
+      "priority": "medium"
+    }
+  ]
+}

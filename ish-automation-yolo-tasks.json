@@ -1,0 +1,95 @@
+{
+  "tasks": [
+    {
+      "name": "format-all-javascript",
+      "description": "Format all JavaScript files using Prettier with consistent configuration",
+      "prompt": "Format all JavaScript and TypeScript files in the ish-automation project using prettier with standard configuration, ensuring consistent code style across all 266 files",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "add-comprehensive-jsdoc",
+      "description": "Add comprehensive JSDoc documentation to all TypeScript functions",
+      "prompt": "Add detailed JSDoc comments to all TypeScript functions across the entire codebase, including parameter types, return types, examples, and usage descriptions for better IDE support and code clarity",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "standardize-error-handling",
+      "description": "Standardize error handling patterns across all modules and services",
+      "prompt": "Review and standardize error handling patterns in all modules, ensuring consistent try-catch blocks, proper error logging with Winston, and standardized error response formats across the entire automation system",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "optimize-package-dependencies",
+      "description": "Optimize package.json dependencies and update to latest stable versions",
+      "prompt": "Review package.json, update all dependencies to their latest stable versions while ensuring compatibility, remove any unused dependencies, and organize scripts in logical categories with better descriptions",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "enhance-typescript-configuration",
+      "description": "Improve TypeScript configuration and add strict type checking",
+      "prompt": "Enhance tsconfig.json with stricter type checking options, add path mappings for better imports, improve module resolution, and ensure all TypeScript files properly utilize strict typing throughout the project",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "add-comprehensive-logging",
+      "description": "Implement structured logging across all automation modules",
+      "prompt": "Add comprehensive Winston logging to all automation modules, ensuring consistent log formats, proper log levels, structured metadata, and correlation IDs for tracking automation workflows across the system",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "update-documentation-index",
+      "description": "Update and expand the documentation index with current project status",
+      "prompt": "Review and expand DOCUMENTATION_INDEX.md to include all current modules, APIs, and configurations. Add current project statistics, setup instructions, and ensure all documentation is current and comprehensive for the 266-file project",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "implement-health-monitoring",
+      "description": "Add comprehensive health monitoring and metrics collection",
+      "prompt": "Implement health monitoring endpoints for all critical services, add metrics collection for automation performance, create health check routes, and ensure system observability across the entire automation platform",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "enhance-security-measures",
+      "description": "Review and enhance security measures across all modules",
+      "prompt": "Conduct comprehensive security review of all modules, implement input validation, sanitize data handling, add rate limiting where appropriate, and ensure all external API calls include proper security headers and error handling",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "add-performance-optimizations",
+      "description": "Optimize performance bottlenecks in automation workflows",
+      "prompt": "Analyze and optimize performance bottlenecks in automation workflows, implement caching strategies for repeated operations, optimize database queries, and improve overall system responsiveness across all automation modules",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "standardize-configuration-management",
+      "description": "Standardize configuration management across all environments",
+      "prompt": "Standardize configuration management using the existing config system, ensure environment variables are properly validated, add configuration validation, and implement consistent configuration loading patterns across all modules",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "enhance-test-coverage",
+      "description": "Improve test coverage across all automation modules",
+      "prompt": "Review existing test coverage and add comprehensive tests for all critical automation modules, ensure edge cases are covered, improve test documentation, and maintain high test quality standards across the entire project",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "cleanup-unused-code",
+      "description": "Remove unused code and optimize file organization",
+      "prompt": "Identify and remove unused code, dead functions, and redundant files across the 266-file project. Optimize imports, consolidate duplicate functionality, and ensure clean, maintainable code organization throughout the codebase",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    }
+  ]
+}

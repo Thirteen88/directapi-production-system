@@ -1,0 +1,74 @@
+{
+  "tasks": [
+    {
+      "name": "large-scale-code-analysis-1",
+      "description": "Analyze entire codebase for security vulnerabilities and performance issues",
+      "prompt": "Conduct comprehensive codebase analysis including security vulnerability scanning, performance bottleneck identification, code quality assessment, dependency analysis, and provide detailed improvement recommendations",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "large-scale-code-analysis-2",
+      "description": "Complete system architecture review and optimization recommendations",
+      "prompt": "Review entire system architecture, identify optimization opportunities, suggest microservices decomposition, evaluate scalability, and provide comprehensive modernization roadmap",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "large-scale-code-analysis-3",
+      "description": "Comprehensive testing strategy implementation across all modules",
+      "prompt": "Implement comprehensive testing strategy including unit tests, integration tests, performance tests, security tests, and establish automated testing pipelines with CI/CD integration",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "medium"
+    },
+    {
+      "name": "database-optimization-project",
+      "description": "Complete database optimization and performance tuning",
+      "prompt": "Optimize database performance including query optimization, index tuning, schema redesign, caching implementation, connection pooling, and performance monitoring setup",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "security-hardening-initiative",
+      "description": "Enterprise-grade security hardening across all systems",
+      "prompt": "Implement comprehensive security hardening including vulnerability patching, access control improvements, encryption implementation, security monitoring, and compliance verification",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "performance-optimization-sprint",
+      "description": "System-wide performance optimization and enhancement",
+      "prompt": "Execute system-wide performance optimization including code profiling, algorithm optimization, memory management improvements, I/O optimization, and caching strategy enhancement",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "documentation-overhaul-project",
+      "description": "Complete technical documentation overhaul and knowledge base creation",
+      "prompt": "Overhaul all technical documentation, create comprehensive knowledge base, develop API documentation, write architecture guides, and establish documentation maintenance processes",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "priority": "medium"
+    },
+    {
+      "name": "monitoring-infrastructure-setup",
+      "description": "Production-grade monitoring and observability infrastructure",
+      "prompt": "Setup comprehensive monitoring infrastructure including metrics collection, distributed tracing, log aggregation, alerting systems, dashboard creation, and operational monitoring",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "medium"
+    },
+    {
+      "name": "dependency-management-upgrade",
+      "description": "Complete dependency management and supply chain security audit",
+      "prompt": "Audit and upgrade all dependencies, implement supply chain security measures, vulnerability scanning, automated updates, and establish dependency governance policies",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "high"
+    },
+    {
+      "name": "api-gateway-implementation",
+      "description": "Enterprise API gateway with advanced routing and security features",
+      "prompt": "Implement enterprise API gateway with advanced routing, rate limiting, authentication, monitoring, caching, and comprehensive API management capabilities",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "priority": "medium"
+    }
+  ]
+}

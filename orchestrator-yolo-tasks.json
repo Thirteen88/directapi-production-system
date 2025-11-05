@@ -1,0 +1,53 @@
+{
+  "tasks": [
+    {
+      "name": "add-comprehensive-docs",
+      "description": "Add comprehensive documentation to all orchestrator functions",
+      "prompt": "Add detailed docstrings and type hints to all functions in orchestrator.py, including examples and usage patterns",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "optimize-imports-orchestrator",
+      "description": "Optimize import statements and organize code structure",
+      "prompt": "Review and optimize import statements in orchestrator.py and related files, remove unused imports, and organize imports logically",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "add-error-improvements",
+      "description": "Enhance error handling and logging throughout orchestrator",
+      "prompt": "Improve error handling in orchestrator.py with better error messages, structured logging, and graceful degradation",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "update-requirements-txt",
+      "description": "Update requirements.txt with latest stable dependency versions",
+      "prompt": "Review requirements.txt and update all Python dependencies to their latest stable versions, ensuring compatibility",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "format-python-code",
+      "description": "Format all Python code using black and isort",
+      "prompt": "Format all Python files using black for code formatting and isort for import organization",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "add-type-annotations-python",
+      "description": "Add comprehensive type annotations to all Python functions",
+      "prompt": "Add detailed type hints to all functions in orchestrator.py, utils.py, and related Python files",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "update-cli-help-text",
+      "description": "Improve CLI help text and add usage examples",
+      "prompt": "Enhance the CLI help text in cli.py with better descriptions, examples, and YOLO mode documentation",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    }
+  ]
+}

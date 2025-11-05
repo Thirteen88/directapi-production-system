@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "name": "add-logging",
+      "description": "Add comprehensive logging to all utility functions",
+      "prompt": "Add debug logging statements to all utility functions in the utils directory",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "update-types",
+      "description": "Update TypeScript types for better type safety",
+      "prompt": "Review and improve TypeScript type definitions across the codebase",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "delete-temp-files",
+      "description": "Delete all temporary files and clean up the tmp directory",
+      "prompt": "Remove all temporary files from the tmp/ directory and clean up any cache files",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "format-code",
+      "description": "Format all Python code using black formatter",
+      "prompt": "Format all Python files in the project using the black code formatter",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "update-prod-config",
+      "description": "Update production database configuration settings",
+      "prompt": "Update the production database configuration in the config/prod.json file",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    }
+  ]
+}

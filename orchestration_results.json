@@ -1,0 +1,199 @@
+{
+  "total_tasks": 4,
+  "successful": 4,
+  "failed": 0,
+  "timeout": 0,
+  "total_execution_time": 54.66851234436035,
+  "results_by_agent": {
+    "code_generator_1": {
+      "status": "completed",
+      "outputs": {
+        "message": "Task Generate utility functions completed successfully",
+        "processed_inputs": {
+          "module": "utils",
+          "functions": [
+            "parse_json",
+            "validate_email",
+            "hash_password"
+          ]
+        }
+      },
+      "execution_time": 13.431411504745483
+    },
+    "code_reviewer_1": {
+      "status": "completed",
+      "outputs": {
+        "message": "Task Review API endpoints completed successfully",
+        "processed_inputs": {
+          "files": [
+            "api/users.py",
+            "api/auth.py"
+          ],
+          "focus_areas": [
+            "security",
+            "performance",
+            "error_handling"
+          ]
+        }
+      },
+      "execution_time": 13.924649477005005
+    },
+    "tester_1": {
+      "status": "completed",
+      "outputs": {
+        "message": "Task Generate integration tests completed successfully",
+        "processed_inputs": {
+          "test_suite": "integration",
+          "endpoints": [
+            "/api/login",
+            "/api/users"
+          ],
+          "coverage_target": 80
+        }
+      },
+      "execution_time": 13.688958406448364
+    },
+    "documenter_1": {
+      "status": "completed",
+      "outputs": {
+        "message": "Task Generate API documentation completed successfully",
+        "processed_inputs": {
+          "api_version": "v1",
+          "endpoints": [
+            "users",
+            "auth",
+            "posts"
+          ],
+          "format": "openapi"
+        }
+      },
+      "execution_time": 13.623492956161499
+    }
+  },
+  "all_outputs": {
+    "code_generator_1_1762124574735": {
+      "message": "Task Generate utility functions completed successfully",
+      "processed_inputs": {
+        "module": "utils",
+        "functions": [
+          "parse_json",
+          "validate_email",
+          "hash_password"
+        ]
+      }
+    },
+    "code_reviewer_1_1762124574736": {
+      "message": "Task Review API endpoints completed successfully",
+      "processed_inputs": {
+        "files": [
+          "api/users.py",
+          "api/auth.py"
+        ],
+        "focus_areas": [
+          "security",
+          "performance",
+          "error_handling"
+        ]
+      }
+    },
+    "tester_1_1762124574736": {
+      "message": "Task Generate integration tests completed successfully",
+      "processed_inputs": {
+        "test_suite": "integration",
+        "endpoints": [
+          "/api/login",
+          "/api/users"
+        ],
+        "coverage_target": 80
+      }
+    },
+    "documenter_1_1762124574736": {
+      "message": "Task Generate API documentation completed successfully",
+      "processed_inputs": {
+        "api_version": "v1",
+        "endpoints": [
+          "users",
+          "auth",
+          "posts"
+        ],
+        "format": "openapi"
+      }
+    }
+  },
+  "provenance_records": [
+    {
+      "task_id": "code_generator_1_1762124574735",
+      "agent_name": "code_generator_1",
+      "branch_name": "code_generator_1_0_1762124574",
+      "started_at": "2025-11-02T23:02:54.736846Z",
+      "completed_at": "2025-11-02T23:03:08.167597Z",
+      "input_hash": "46d18e696f1e414c701fd3fb4e1c6825b6779becddc5dbf34c3c3e88ce4a58e4",
+      "output_hash": "7cc6e74984ace70e5759b0e74adb2ba7601e88df4edba6a3388c9127e20bf6fb",
+      "command_history": [
+        "Created worktree at /home/gary/claude-orchestrator/worktrees/code_generator_1_0_1762124574",
+        "Setup virtualenv",
+        "Wrote task envelope with model: claude-sonnet-4-5-20250929",
+        "Executed agent script",
+        "Committed results"
+      ],
+      "retry_count": 0,
+      "worktree_path": "/home/gary/claude-orchestrator/worktrees/code_generator_1_0_1762124574"
+    },
+    {
+      "task_id": "code_reviewer_1_1762124574736",
+      "agent_name": "code_reviewer_1",
+      "branch_name": "code_reviewer_1_1_1762124574",
+      "started_at": "2025-11-02T23:02:54.737969Z",
+      "completed_at": "2025-11-02T23:03:08.662437Z",
+      "input_hash": "92fb7c13b0b8b622f6ce9961a8ae6370adbc6a77f8fbe0f01b920504b6b04ed4",
+      "output_hash": "80b06b07161773e1347ec4a08dc15079972fb9c98e082c452595507c4074b200",
+      "command_history": [
+        "Created worktree at /home/gary/claude-orchestrator/worktrees/code_reviewer_1_1_1762124574",
+        "Setup virtualenv",
+        "Wrote task envelope with model: claude-sonnet-4-5-20250929",
+        "Executed agent script",
+        "Committed results"
+      ],
+      "retry_count": 0,
+      "worktree_path": "/home/gary/claude-orchestrator/worktrees/code_reviewer_1_1_1762124574"
+    },
+    {
+      "task_id": "tester_1_1762124574736",
+      "agent_name": "tester_1",
+      "branch_name": "tester_1_2_1762124574",
+      "started_at": "2025-11-02T23:02:54.738796Z",
+      "completed_at": "2025-11-02T23:03:08.427543Z",
+      "input_hash": "67a6b695219af8de23c2a824b2cfbcd8925518da745fec4b6c9031682ad9bd81",
+      "output_hash": "7d67b09ff2253ef4c5190f0623f7d9a77968c311e86da903d2bdef1e06b344a9",
+      "command_history": [
+        "Created worktree at /home/gary/claude-orchestrator/worktrees/tester_1_2_1762124574",
+        "Setup virtualenv",
+        "Wrote task envelope with model: claude-sonnet-4-5-20250929",
+        "Executed agent script",
+        "Committed results"
+      ],
+      "retry_count": 0,
+      "worktree_path": "/home/gary/claude-orchestrator/worktrees/tester_1_2_1762124574"
+    },
+    {
+      "task_id": "documenter_1_1762124574736",
+      "agent_name": "documenter_1",
+      "branch_name": "documenter_1_3_1762124574",
+      "started_at": "2025-11-02T23:02:54.739741Z",
+      "completed_at": "2025-11-02T23:03:08.363069Z",
+      "input_hash": "fe3cc3b8a86838b04c4d58f431b977e50eb2120f39e3309fc9cd8fc90cdf230d",
+      "output_hash": "4623eac80156395599ccf38ff5f90917a965b6e6cf264fcbe7facd968521eebd",
+      "command_history": [
+        "Created worktree at /home/gary/claude-orchestrator/worktrees/documenter_1_3_1762124574",
+        "Setup virtualenv",
+        "Wrote task envelope with model: claude-sonnet-4-5-20250929",
+        "Executed agent script",
+        "Committed results"
+      ],
+      "retry_count": 0,
+      "worktree_path": "/home/gary/claude-orchestrator/worktrees/documenter_1_3_1762124574"
+    }
+  ],
+  "errors": [],
+  "success_rate": 100.0
+}

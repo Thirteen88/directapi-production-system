@@ -1,0 +1,20 @@
+{
+  "timestamp": "2025-10-16T23:46:53.161750",
+  "repo_path": "/home/gary/test-orchestrator-repo",
+  "tasks": {
+    "task-1-hello": {
+      "success": true,
+      "worktree_path": "/home/gary/worktrees/task-1-hello",
+      "message_count": 0,
+      "messages": [],
+      "error": null
+    },
+    "task-2-world": {
+      "success": true,
+      "worktree_path": "/home/gary/worktrees/task-2-world",
+      "message_count": 0,
+      "messages": [],
+      "error": null
+    }
+  }
+}

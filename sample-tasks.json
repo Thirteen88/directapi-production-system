@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    {
+      "name": "feature-auth",
+      "description": "Implement authentication",
+      "prompt": "Implement a user authentication system with JWT tokens",
+      "allowed_tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "base_branch": "main"
+    },
+    {
+      "name": "feature-api",
+      "description": "Create REST API",
+      "prompt": "Create REST API endpoints for user management",
+      "allowed_tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "base_branch": "main"
+    },
+    {
+      "name": "tests",
+      "description": "Write tests",
+      "prompt": "Write comprehensive unit tests with 80% coverage",
+      "allowed_tools": [
+        "Read",
+        "Write",
+        "Edit",
+        "Bash"
+      ],
+      "base_branch": "main"
+    }
+  ]
+}

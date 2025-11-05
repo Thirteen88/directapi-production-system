@@ -1,0 +1,8 @@
+{
+  "error": "Orchestration failed: 'HandoffEnvelope' object has no attribute 'task_name'",
+  "yolo_mode": "autonomous",
+  "total_tasks": 7,
+  "successful": 0,
+  "failed": 7,
+  "orchestrator_used": true
+}

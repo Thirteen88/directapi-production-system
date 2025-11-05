@@ -1,0 +1,53 @@
+{
+  "tasks": [
+    {
+      "name": "update-readme-documentation",
+      "description": "Update README.md with current project status and setup instructions",
+      "prompt": "Review and update the README.md file to reflect current project status, setup instructions, and feature list",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "optimize-package-json",
+      "description": "Optimize package.json scripts and dependencies",
+      "prompt": "Review package.json, organize scripts logically, update dependencies to stable versions, and add missing useful scripts",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    },
+    {
+      "name": "add-type-annotations",
+      "description": "Add TypeScript-style JSDoc annotations to all functions",
+      "prompt": "Add comprehensive JSDoc type annotations to all JavaScript functions to improve IDE support and code clarity",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "standardize-error-handling",
+      "description": "Standardize error handling across all server and database functions",
+      "prompt": "Review and standardize error handling patterns in server.js and database modules with consistent error responses",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "update-database-documentation",
+      "description": "Update database schema documentation and setup guides",
+      "prompt": "Review and update DATABASE-SETUP.md with current schema information and clear setup instructions",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "add-logging-middleware",
+      "description": "Add comprehensive logging middleware to server.js",
+      "prompt": "Add structured logging middleware to server.js for better debugging and monitoring of API requests",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main"
+    },
+    {
+      "name": "format-code-with-prettier",
+      "description": "Format all code files using prettier with consistent configuration",
+      "prompt": "Run prettier on all JavaScript, JSON, and markdown files to ensure consistent code formatting",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main"
+    }
+  ]
+}

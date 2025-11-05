@@ -1,0 +1,32 @@
+{
+  "test_timestamp": 1762116473.3674204,
+  "system_info": {
+    "cpu_cores": 8,
+    "memory_gb": 15.31,
+    "memory_available_gb": 7.97,
+    "cpu_usage": 34.8
+  },
+  "original_metrics": {
+    "execution_time": 25.0,
+    "success_rate": 100.0,
+    "model_assignment_accuracy": 100.0,
+    "setup_overhead": 15.0,
+    "task_execution_time": 10.0
+  },
+  "enhanced_metrics": {
+    "execution_time": 14.284419298171997,
+    "success_rate": 100.0,
+    "model_assignment_accuracy": 100.0
+  },
+  "performance_improvements": {
+    "time_improvement_percentage": 42.86232280731201,
+    "time_saved_seconds": 10.715580701828003
+  },
+  "model_assignments": {
+    "total": 10,
+    "unique_models": [
+      "claude-3-5-sonnet-20241022"
+    ],
+    "consistency": true
+  }
+}

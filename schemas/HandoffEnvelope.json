@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/HandoffEnvelope.json",
+  "title": "HandoffEnvelope",
+  "description": "Universal handoff contract for multi-agent orchestration system. Defines the complete envelope for agent-to-agent task delegation with provenance tracking, versioning, and quality assurance metrics.",
+  "type": "object",
+  "required": [
+    "handoff_id",
+    "parent_task_id",
+    "agent_from",
+    "agent_to",
+    "handoff_version",
+    "system_policy_version",
+    "inputs_hash",
+    "inputs_raw",
+    "inputs_schema_version",
+    "outputs_schema_version",
+    "outputs_expected_format",
+    "outputs_hash",
+    "outputs_raw",
+    "delegation_timestamp",
+    "success_criteria",
+    "provenance",
+    "timeout_used",
+    "retry_count",
+    "latency_metrics",
+    "schema_version",
+    "drift_note"
+  ],
+  "properties": {
+    "handoff_id": {
+      "type": "string",
+      "description": "Unique identifier for this specific handoff instance",
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "minLength": 1
+    },
+    "parent_task_id": {
+      "type": "string",
+      "description": "Identifier of the parent task that spawned this handoff",
+      "pattern": "^[a-zA-Z0-9_-]+$",
+      "minLength": 1
+    },
+    "agent_from": {
+      "type": "string",
+      "description": "Identifier of the agent initiating the handoff",
+      "minLength": 1
+    },
+    "agent_to": {
+      "type": "string",
+      "description": "Identifier of the agent receiving the handoff",
+      "minLength": 1
+    },
+    "handoff_version": {
+      "type": "string",
+      "description": "Version of the handoff protocol being used",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "system_policy_version": {
+      "type": "string",
+      "description": "Version of the system policy governing this handoff",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "inputs_hash": {
+      "type": "string",
+      "description": "Cryptographic hash of the input data for integrity verification",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "inputs_raw": {
+      "description": "The actual input data being passed to the receiving agent",
+      "oneOf": [
+        { "type": "object" },
+        { "type": "array" },
+        { "type": "string" },
+        { "type": "number" },
+        { "type": "boolean" },
+        { "type": "null" }
+      ]
+    },
+    "inputs_schema_version": {
+      "type": "string",
+      "description": "Version of the schema used to validate inputs",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "outputs_schema_version": {
+      "type": "string",
+      "description": "Version of the schema expected for outputs",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "outputs_expected_format": {
+      "type": "object",
+      "description": "JSON Schema definition of the expected output format",
+      "properties": {
+        "$schema": { "type": "string" },
+        "type": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "outputs_hash": {
+      "type": "string",
+      "description": "Cryptographic hash of the output data (populated after completion)",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "outputs_raw": {
+      "description": "The actual output data returned by the receiving agent (populated after completion)",
+      "oneOf": [
+        { "type": "object" },
+        { "type": "array" },
+        { "type": "string" },
+        { "type": "number" },
+        { "type": "boolean" },
+        { "type": "null" }
+      ]
+    },
+    "delegation_timestamp": {
+      "type": "string",
+      "description": "ISO 8601 timestamp when the handoff was initiated",
+      "format": "date-time"
+    },
+    "success_criteria": {
+      "type": "object",
+      "description": "Criteria that define successful completion of this handoff",
+      "required": ["criteria"],
+      "properties": {
+        "criteria": {
+          "type": "array",
+          "description": "List of success criteria that must be met",
+          "items": {
+            "type": "object",
+            "required": ["name", "description", "required"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Name of the success criterion"
+              },
+              "description": {
+                "type": "string",
+                "description": "Detailed description of what constitutes success"
+              },
+              "required": {
+                "type": "boolean",
+                "description": "Whether this criterion must be met for overall success"
+              },
+              "validation_method": {
+                "type": "string",
+                "description": "Method used to validate this criterion"
+              }
+            }
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Provenance tracking information for audit and debugging",
+      "required": ["chain", "initiated_by", "execution_context"],
+      "properties": {
+        "chain": {
+          "type": "array",
+          "description": "Chain of agents involved in this task lineage",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "initiated_by": {
+          "type": "string",
+          "description": "Original initiator of the task chain"
+        },
+        "execution_context": {
+          "type": "object",
+          "description": "Context information about the execution environment",
+          "properties": {
+            "environment": { "type": "string" },
+            "platform": { "type": "string" },
+            "session_id": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "timeout_used": {
+      "type": "number",
+      "description": "Timeout value used for this handoff in seconds",
+      "minimum": 0
+    },
+    "retry_count": {
+      "type": "integer",
+      "description": "Number of retry attempts made for this handoff",
+      "minimum": 0
+    },
+    "latency_metrics": {
+      "type": "object",
+      "description": "Latency metrics captured during handoff execution",
+      "required": ["handoff_duration_ms"],
+      "properties": {
+        "handoff_duration_ms": {
+          "type": "number",
+          "description": "Total duration of the handoff in milliseconds",
+          "minimum": 0
+        },
+        "queue_time_ms": {
+          "type": "number",
+          "description": "Time spent in queue before processing",
+          "minimum": 0
+        },
+        "execution_time_ms": {
+          "type": "number",
+          "description": "Actual execution time of the task",
+          "minimum": 0
+        },
+        "network_latency_ms": {
+          "type": "number",
+          "description": "Network latency incurred during handoff",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "schema_version": {
+      "type": "string",
+      "description": "Version of this HandoffEnvelope schema",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "drift_note": {
+      "type": "string",
+      "description": "Notes about any schema drift or deviations from expected format"
+    }
+  },
+  "additionalProperties": false
+}

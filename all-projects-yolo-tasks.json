@@ -1,0 +1,124 @@
+{
+  "tasks": [
+    {
+      "name": "ish-automation-enhancement",
+      "description": "Complete enhancement of ISH automation project with improved documentation and configuration",
+      "prompt": "Enhance the ISH automation project by improving code organization, adding comprehensive documentation, implementing better error handling, optimizing performance, and ensuring all configurations are up to date. Focus on maintainability and scalability.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "nhs-dental-site-optimization",
+      "description": "Optimize NHS dental site for performance, accessibility, and SEO",
+      "prompt": "Optimize the NHS dental site project by improving page load speed, enhancing accessibility features, implementing proper SEO meta tags, optimizing images, ensuring mobile responsiveness, and adding comprehensive error handling.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "android-automation-system-enhancement",
+      "description": "Enhance Android automation system with better device management and error handling",
+      "prompt": "Enhance the Android automation system by improving device connection reliability, adding comprehensive logging, implementing better error recovery mechanisms, optimizing ADB commands, and adding support for more device types.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "claude-orchestrator-optimization",
+      "description": "Optimize Claude orchestrator for better performance and reliability",
+      "prompt": "Optimize the Claude orchestrator system by improving parallel execution performance, enhancing memory management, implementing better error handling, adding comprehensive monitoring, and optimizing worktree management.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "perplexity-honor50-integration",
+      "description": "Complete Perplexity Honor 50 integration with enhanced features",
+      "prompt": "Complete the Perplexity Honor 50 integration by implementing all planned features, adding comprehensive device management, optimizing performance, ensuring reliability, and adding detailed documentation and troubleshooting guides.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "claude-sidekick-enhancement",
+      "description": "Enhance Claude Sidekick with better AI assistance features",
+      "prompt": "Enhance the Claude Sidekick project by improving AI response accuracy, adding more context-aware assistance, implementing better memory management, optimizing performance, and adding comprehensive user interaction features.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "ishchat-integration-completion",
+      "description": "Complete ISHChat integration with full feature set",
+      "prompt": "Complete the ISHChat integration project by implementing all remaining features, ensuring robust error handling, optimizing performance, adding comprehensive testing, and creating detailed documentation and user guides.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "uk-council-sites-update",
+      "description": "Update and optimize UK council sites collection",
+      "prompt": "Update the UK council sites collection by refreshing all site data, improving scraping reliability, adding new councils, optimizing performance, implementing better error handling, and ensuring data accuracy.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "low"
+    },
+    {
+      "name": "termux-monitoring-enhancement",
+      "description": "Enhance Termux monitoring system with better alerts and reporting",
+      "prompt": "Enhance the Termux monitoring system by adding real-time alerts, implementing comprehensive reporting, optimizing resource usage, adding custom metrics, improving user interface, and ensuring reliable operation.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "global-documentation-update",
+      "description": "Update all project documentation and create comprehensive guides",
+      "prompt": "Update documentation across all projects by creating comprehensive setup guides, adding troubleshooting sections, updating API documentation, ensuring consistency, and creating a master documentation index for easy navigation.",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "security-audit-and-hardening",
+      "description": "Conduct security audit and implement hardening measures across all projects",
+      "prompt": "Conduct comprehensive security audit across all projects, identify vulnerabilities, implement security hardening measures, add input validation, secure API endpoints, improve authentication mechanisms, and create security guidelines.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "performance-optimization-across-projects",
+      "description": "Optimize performance across all projects",
+      "prompt": "Optimize performance across all projects by analyzing bottlenecks, implementing caching strategies, optimizing database queries, improving code efficiency, reducing memory usage, and implementing performance monitoring.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "testing-implementation-across-projects",
+      "description": "Implement comprehensive testing across all projects",
+      "prompt": "Implement comprehensive testing across all projects by adding unit tests, integration tests, end-to-end tests, performance tests, setting up CI/CD pipelines, and ensuring code coverage standards are met.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "medium"
+    },
+    {
+      "name": "backup-and-recovery-setup",
+      "description": "Setup comprehensive backup and recovery systems",
+      "prompt": "Setup comprehensive backup and recovery systems across all projects by implementing automated backups, creating recovery procedures, ensuring data integrity, setting up monitoring, and documenting disaster recovery plans.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    },
+    {
+      "name": "master-orchestration-coordination",
+      "description": "Create master coordination system for all project orchestration",
+      "prompt": "Create a master orchestration coordination system that can manage and coordinate improvements across all projects simultaneously, with proper dependency management, conflict resolution, progress tracking, and comprehensive reporting.",
+      "allowed_tools": ["Read", "Write", "Edit", "Bash"],
+      "base_branch": "main",
+      "priority": "high"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "api": {
+    "endpoint": "https://api.perplexity.ai/v1/chat/completions",
+    "api_key_env": "PERPLEXITY_API_KEY",
+    "models": {
+      "default": "sonar-medium-online",
+      "available": [
+        "sonar-pro",
+        "sonar-medium-online",
+        "sonar-small-online",
+        "sonar",
+        "sonar-reasoning"
+      ]
+    },
+    "timeout": {
+      "connect": 10,
+      "read": 120
+    },
+    "retry": {
+      "max_attempts": 3,
+      "backoff_factor": 2,
+      "retry_on_status": [429, 500, 502, 503, 504]
+    },
+    "rate_limit": {
+      "requests_per_minute": 50,
+      "tokens_per_minute": 100000
+    },
+    "streaming": {
+      "enabled": true,
+      "chunk_size": 1024
+    }
+  },
+  "ui_automation": {
+    "enabled": true,
+    "fallback_on_api_failure": true,
+    "app": {
+      "package": "ai.perplexity.app.android",
+      "activity": "ai.perplexity.app.android.MainActivity",
+      "launch_timeout": 10
+    },
+    "interaction": {
+      "input_method": "adb_input",
+      "text_field_tap": {
+        "x": 540,
+        "y": 1800
+      },
+      "send_button_tap": {
+        "x": 1000,
+        "y": 1800
+      },
+      "delay_after_input": 1.0,
+      "delay_after_send": 2.0
+    },
+    "response_detection": {
+      "methods": ["clipboard", "notification", "screenshot"],
+      "clipboard_check_interval": 0.5,
+      "max_wait_time": 60,
+      "notification_keywords": ["Perplexity", "Search", "Response"]
+    },
+    "screenshot": {
+      "enabled": true,
+      "ocr_engine": "tesseract",
+      "response_region": {
+        "x": 0,
+        "y": 300,
+        "width": 1080,
+        "height": 1500
+      }
+    },
+    "error_recovery": {
+      "max_retries": 2,
+      "restart_app_on_failure": true,
+      "clear_app_data_on_critical_failure": false
+    }
+  },
+  "session": {
+    "persist_history": true,
+    "history_file": "~/.perplexity_history.json",
+    "max_context_messages": 10,
+    "context_token_limit": 4000
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "~/.perplexity_bridge.log",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  }
+}

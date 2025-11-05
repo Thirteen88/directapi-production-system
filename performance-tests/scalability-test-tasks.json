@@ -1,0 +1,39 @@
+{
+  "tasks": [
+    {
+      "name": "micro-task-1-simple-logging",
+      "description": "Add simple logging to utility function",
+      "prompt": "Add basic console.log statements to a utility function for debugging purposes",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "priority": "low"
+    },
+    {
+      "name": "micro-task-2-documentation-update",
+      "description": "Update function documentation",
+      "prompt": "Update JSDoc comments for a single function to improve code documentation",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "priority": "low"
+    },
+    {
+      "name": "micro-task-3-import-optimization",
+      "description": "Optimize import statements",
+      "prompt": "Optimize import statements in a module to remove unused imports",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "priority": "low"
+    },
+    {
+      "name": "micro-task-4-variable-renaming",
+      "description": "Rename variables for clarity",
+      "prompt": "Rename unclear variable names to be more descriptive and readable",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "priority": "low"
+    },
+    {
+      "name": "micro-task-5-code-formatting",
+      "description": "Format code according to style guide",
+      "prompt": "Format code according to project style guide and best practices",
+      "allowed_tools": ["Read", "Write", "Edit"],
+      "priority": "low"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    CLAUDE ORCHESTRATOR TEST SUITE                            ║
+║                           QUICK REFERENCE                                    ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ RUN TESTS                                                                    │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  Method 1 (Direct):
+    $ cd ~/claude-orchestrator
+    $ python3 test_orchestrator.py
+
+  Method 2 (Script):
+    $ cd ~/claude-orchestrator
+    $ ./RUN_TESTS.sh
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ TEST COVERAGE (18 Tests Total)                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  ✓ Part 1: Core Functions (6 tests)
+    • Hash generation, timestamps, envelopes
+    • Worktree & virtualenv management
+    • Schema validation
+
+  ✓ Part 2: Orchestration Flow (4 tests)
+    • Parallel execution
+    • Provenance tracking
+    • Output validation & cleanup
+
+  ✓ Part 3: Error Handling (4 tests)
+    • Timeouts & retries
+    • Failed agent simulation
+    • Command timeouts
+
+  ✓ Part 4: Performance (2 tests)
+    • Parallel vs sequential benchmarks
+    • Resource usage tracking
+
+  ✓ Part 5: Integration (2 tests)
+    • End-to-end workflows
+    • Multi-level delegation
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ OUTPUT LOCATIONS                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  Console:         Real-time test progress with ✓/✗ indicators
+  JSON Results:    ~/claude-orchestrator/test_results/test_results_*.json
+  Logs:            ~/claude-orchestrator/test_results/test_orchestrator.log
+  Audit:           ~/claude-orchestrator/orchestrator_audit.log
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ EXPECTED RESULTS                                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  Total Tests:      18
+  Expected Pass:    18 (100%)
+  Duration:         60-120 seconds (typical)
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ PREREQUISITES                                                                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  • Python 3.7+
+  • Git 2.x (configured)
+  • pip install psutil
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ TROUBLESHOOTING                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  Git not configured:
+    $ git config --global user.email "you@example.com"
+    $ git config --global user.name "Your Name"
+
+  Missing psutil:
+    $ pip3 install psutil
+
+  Permission denied:
+    $ chmod +x ~/claude-orchestrator/test_orchestrator.py
+    $ chmod +x ~/claude-orchestrator/RUN_TESTS.sh
+
+  Tests timeout:
+    Edit test_orchestrator.py, increase timeout_seconds values
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ FILES                                                                        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  test_orchestrator.py              Main test script (1128 lines)
+  RUN_TESTS.sh                      Convenience runner
+  TEST_README.md                    Detailed documentation
+  TEST_ORCHESTRATOR_SUMMARY.md      Complete summary
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ DOCUMENTATION                                                                │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  Quick Start:      TEST_ORCHESTRATOR_SUMMARY.md
+  Detailed Guide:   TEST_README.md
+  This Reference:   QUICKREF.txt
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ STATUS: ✓ READY TO RUN                                                      │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+  All validation checks passed. Execute:
+    $ python3 ~/claude-orchestrator/test_orchestrator.py
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                         Test Suite Version 1.0                               ║
+║                      Created: October 23, 2025                               ║
+╚══════════════════════════════════════════════════════════════════════════════╝

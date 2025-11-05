@@ -1,0 +1,84 @@
+# 🚀 Simplified Ultra-Enhanced Orchestrator Deployment
+# Using available ports for immediate deployment
+
+services:
+  ultra-enhanced-orchestrator:
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    container_name: claude-orchestrator-ultra-enhanced
+    restart: unless-stopped
+    ports:
+      - "8888:8080"  # Main API endpoint
+      - "8889:8081"  # Health check endpoint
+    environment:
+      # Ultra-Enhanced Configuration
+      - ORCHESTRATOR_MODE=ULTRA_ENHANCED
+      - YOLO_MODE=AGGRESSIVE
+      - WORKTREE_POOL_SIZE=20
+      - MAX_SHARED_ENVS=10
+      - PARALLEL_EXECUTION=true
+      - SMART_CACHING=true
+
+      # Performance Optimization
+      - PERFORMANCE_MODE=MAXIMUM
+      - RESOURCE_OPTIMIZATION=true
+      - INTELLIGENT_MODEL_ASSIGNMENT=true
+      - AUTO_APPROVAL_ENABLED=true
+
+      # API Configuration
+      - API_HOST=0.0.0.0
+      - API_PORT=8080
+      - HEALTH_CHECK_PORT=8081
+      - LOG_LEVEL=INFO
+      - ENVIRONMENT=production
+
+    volumes:
+      # Persistent storage
+      - ./data/worktrees:/app/worktrees
+      - ./data/shared-envs:/app/shared-envs
+      - ./data/cache:/app/cache
+      - ./data/logs:/app/logs
+
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 4G
+          cpus: '2'
+        reservations:
+          memory: 2G
+          cpus: '1'
+
+    # Health check
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8081/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+    # Network
+    networks:
+      - orchestrator-network
+
+    # Security
+    security_opt:
+      - no-new-privileges:true
+
+    # User
+    user: "1000:1000"
+
+networks:
+  orchestrator-network:
+    driver: bridge
+
+volumes:
+  worktrees:
+    driver: local
+  shared-envs:
+    driver: local
+  cache:
+    driver: local
+  logs:
+    driver: local

@@ -1,0 +1,56 @@
+# Core Dependencies
+anthropic>=0.18.0           # Claude API client
+jsonschema>=4.20.0          # JSON schema validation
+pydantic>=2.5.0             # Data validation and settings management
+
+# Async and HTTP
+aiohttp>=3.9.0              # Async HTTP client/server
+aiofiles>=23.2.0            # Async file operations
+asyncio-throttle>=1.0.2     # Rate limiting for async operations
+
+# Git Operations
+GitPython>=3.1.40           # Git repository management
+pygit2>=1.13.0              # Alternative git bindings (optional, more performant)
+
+# Process and System Management
+psutil>=5.9.0               # System and process utilities
+virtualenv>=20.25.0         # Virtual environment creation
+
+# CLI and UI
+click>=8.1.7                # Command-line interface creation
+rich>=13.7.0                # Rich text and beautiful formatting in terminal
+tqdm>=4.66.0                # Progress bars
+
+# Configuration Management
+python-dotenv>=1.0.0        # Load environment variables from .env
+pyyaml>=6.0.1               # YAML configuration file support
+toml>=0.10.2                # TOML configuration file support
+
+# Logging and Monitoring
+loguru>=0.7.2               # Enhanced logging
+structlog>=24.1.0           # Structured logging
+
+# Data Handling
+python-dateutil>=2.8.2      # Date/time utilities
+jinja2>=3.1.2               # Template engine for code generation
+
+# Testing and Validation (optional but recommended)
+pytest>=7.4.0               # Testing framework
+pytest-asyncio>=0.21.0      # Async test support
+pytest-cov>=4.1.0           # Coverage plugin
+
+# Code Quality (optional, for development)
+black>=23.12.0              # Code formatter
+pylint>=3.0.0               # Code linter
+mypy>=1.7.0                 # Static type checker
+pre-commit>=3.6.0           # Git hooks for code quality
+
+# Utilities
+tenacity>=8.2.3             # Retry logic
+watchdog>=3.0.0             # File system event monitoring
+pathlib2>=2.3.7             # Enhanced path handling (for Python < 3.4)
+
+# Optional: Enhanced features
+redis>=5.0.0                # For distributed task queuing (optional)
+celery>=5.3.0               # Distributed task queue (optional)
+prometheus-client>=0.19.0   # Metrics and monitoring (optional)

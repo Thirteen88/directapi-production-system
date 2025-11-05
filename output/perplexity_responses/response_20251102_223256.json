@@ -1,0 +1,19 @@
+{
+  "prompt": "What is the current time?",
+  "timestamp": "2025-11-02T22:32:02.837685",
+  "screenshots": [
+    "screenshots/perplexity/response_0s_20251102_223218.png",
+    "screenshots/perplexity/response_3s_20251102_223221.png",
+    "screenshots/perplexity/response_6s_20251102_223225.png",
+    "screenshots/perplexity/response_9s_20251102_223229.png",
+    "screenshots/perplexity/response_12s_20251102_223233.png",
+    "screenshots/perplexity/response_15s_20251102_223237.png",
+    "screenshots/perplexity/response_18s_20251102_223240.png",
+    "screenshots/perplexity/response_21s_20251102_223244.png",
+    "screenshots/perplexity/response_24s_20251102_223248.png",
+    "screenshots/perplexity/response_27s_20251102_223252.png",
+    "screenshots/perplexity/response_final_20251102_223256.png"
+  ],
+  "extracted_text": "",
+  "success": true
+}
