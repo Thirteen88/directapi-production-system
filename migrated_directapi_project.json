@@ -1,8 +1,8 @@
 {
   "project_name": "Migrated DirectAPI Project",
-  "migration_timestamp": 1762349189.7091517,
+  "migration_timestamp": 1762350188.5926964,
   "api_system": "DirectAPI",
-  "performance_improvement": "58.2x faster than browser automation",
+  "performance_improvement": "127.4x faster than browser automation",
   "tasks": [
     {
       "task_id": "demo_001",
@@ -56,14 +56,14 @@
     }
   ],
   "performance_stats": {
-    "directapi_total_time": 3.0072760581970215,
+    "directapi_total_time": 1.3735153675079346,
     "browser_estimated_time": 175,
-    "time_saved_seconds": 171.99272394180298,
-    "time_saved_minutes": 2.86654539903005,
-    "speed_improvement_factor": 58.19219672999335,
+    "time_saved_seconds": 173.62648463249207,
+    "time_saved_minutes": 2.8937747438748675,
+    "speed_improvement_factor": 127.4102963387405,
     "successful_tasks": 5,
     "total_tasks": 5,
     "success_rate": 100.0,
-    "avg_task_time": 2.990258502960205
+    "avg_task_time": 1.3553657054901123
   }
 }
